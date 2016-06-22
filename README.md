@@ -1,4 +1,4 @@
-# codeigniter-sms-api
+# Codeigniter-sms-api
 Codeigniter send sms library
 
 
@@ -13,7 +13,9 @@ Codeigniter send sms library
  * 2. Call sendsms function Ex. sendsms( '919918xxxxxx', 'test message' );
  * 
  */
-function sendsms($number, $message_body, $return = '0'){
+
+function sendsms($number, $message_body, $return = '0')
+{
 
     $sender = 'SEDEMO';  // Need to change
     
@@ -44,14 +46,19 @@ function sendsms($number, $message_body, $return = '0'){
     if(!$output){
        $output =  file_get_contents($smsgatewaydata);
     }
-
+    
     if($return == '1'){
-        return $output;            
+    
+        return $output;        
+        
     }else{
+    
         echo "Sent";
+        
     }
     
 }
+
 /*
  * End sendsms_helper.php file
  */
