@@ -1,4 +1,4 @@
-# Codeigniter-sms-api
+# Codeigniter-sms-api : Codeigniter Library to send sms
 Codeigniter send sms library
 
 
@@ -7,11 +7,6 @@ Codeigniter send sms library
  * sendsms_helper.php
  * Save below code as sendsms_helper.php in /application/helpers/ 
  * Author: Spring Edge ( http://www.springedge.com )
- * 
- * How to Use: 
- * 1. Load sendsms helper as $this->load->helper('sendsms_helper');
- * 2. Call sendsms function Ex. sendsms( '919918xxxxxx', 'test message' );
- * 
  */
 
 function sendsms($number, $message_body, $return = '0')
@@ -59,9 +54,7 @@ function sendsms($number, $message_body, $return = '0')
     
 }
 
-/*
- * End sendsms_helper.php file
- */
+/* End sendsms_helper.php file  */
 
 
 
